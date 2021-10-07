@@ -1,0 +1,49 @@
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.img1-wrap {
+	position: relative;
+	overflow: hidden;
+}
+
+.image {
+	width: 900px;
+	height: 500px;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #b8ab9c;
+	opacity: 0.9;
+	overflow: hidden;
+	transition: .7s ease;
+}
+
+.img1-wrap:hover .overlay {
+	height: 100%;
+}
+
+.text {
+	white-space: nowrap; 
+	font-family: 'Courier New', Courier, monospace;
+	color: rgb(73, 51, 23);
+	font-weight: lighter;
+	letter-spacing: 0.2em;
+	font-size: 20px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
