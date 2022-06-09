@@ -1,11 +1,4 @@
-#intro-heading {
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(73, 51, 23);
-    text-align: center;
-    padding-top: 20px;
-}
-
-.flex-container {
+.flex-container-about {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -36,20 +29,12 @@
 .heading {
     font-size: 1.8em;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(73, 51, 23);
+    color: #1e3645;
     font-weight: bolder;
 }
 
-.text {
-    font-size: 1.2em;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: lighter;
-    color: rgb(73, 51, 23);
-    padding-top: 10px;
-}
-
 #photo {
-    width: 525px;
+    width: 450px;
     height: 650px;
     margin-top: 10px;
     margin-left: 20px;
