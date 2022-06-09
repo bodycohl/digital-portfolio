@@ -1,4 +1,4 @@
-.flex-container {
+.flex-container-work {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -18,12 +18,17 @@
 	height: 500px;
 }
 
+#image-case-study {
+	width: 200px;
+	height: 200px;
+}
+
 .overlay {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: #b8ab9c;
+	background-color: #eeeeee;
 	opacity: 0.9;
 	overflow: hidden;
 	transition: .7s ease;
@@ -33,17 +38,47 @@
 	height: 100%;
 }
 
-.text {
-	white-space: nowrap; 
+.overlay-text {
 	font-family: 'Courier New', Courier, monospace;
-	color: rgb(73, 51, 23);
-	font-weight: lighter;
+	color: #1e3645;
+	text-align: center;
 	letter-spacing: 0.2em;
-	font-size: 20px;
+	font-size: 23px;
 	position: absolute;
 	overflow: hidden;
 	top: 50%;
 	left: 45%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
+}
+
+.tooltip {
+	margin-top: 50px;
+	margin-left: 375px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.tooltip-text {
+	visibility: hidden;
+	font-family: 'Courier New', Courier, monospace;
+	background-color: #eeeeee;
+	color: #1e3645;
+	text-align: center;
+	letter-spacing: 0.2em;
+	font-size: 23px;
+
+	overflow: hidden;
+	bottom: 100%;
+  	margin-left: -350px;
+	margin-top: 20px;
+	padding: 75px;
+	
+	width: 700px;
+}
+
+.tooltip:hover .tooltip-text {
+	visibility: visible;
 }
